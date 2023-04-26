@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.img {
+    background-image: url(img/track_formula1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 150vh;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.imgFirst {
+    background-image: url(https://i.dailymail.co.uk/i/pix/2016/07/25/16/36944D5400000578-0-image-a-1_1469461194145.jpg);
+}
+
+.imgSecond {
+    background-image: url(https://live-production.wcms.abc-cdn.net.au/201f77d371e287fb828419f4776290d7?impolicy=wcms_crop_resize&cropH=1680&cropW=2982&xPos=0&yPos=342&width=862&height=485);
+}
+
+.imgThird{
+    background-image: url(https://cdn-3.motorsport.com/static/img/mgl/5900000/5960000/5960000/5960800/5960868/s1200/f1-united-states-gp-2015-race-winner-and-world-champion-lewis-hamilton-mercedes-amg-f1-cel.webp);
+}
+
+.imgFourth{
+    background-image: url(https://paultan.org/image/2017/10/Lewis-Hamilton-Champion-2017-Formula-1-10.jpg);
+}
+
+.imgFifth{
+    background-image: url(https://s.france24.com/media/display/f2c12e5e-f2e6-11e8-997e-005056a964fe/w:980/p:16x9/hamilton_quinto_mundial_f1.webp);
+}
+
+.imgSixth{
+    background-image: url(https://e3.365dm.com/19/11/1600x900/skynews-lewis-hamilton-us-grand-prix_4825743.jpg?20191103210909);
+}
+
+.imgSeventh{
+    background-image: url(https://s1.eestatic.com/2020/11/15/deportes/motor/deportes-deportes_de_motor-automovilismo_536207179_165139258_1706x960.jpg);
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vh;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
